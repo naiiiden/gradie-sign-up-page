@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: sans-serif;
+    font-family: "Roboto";
 }
 
 img {
@@ -31,7 +33,6 @@ img {
 }
 
 form {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     padding-top: 2.5rem;
@@ -58,8 +59,10 @@ h2 {
 }
 
 .iphone {
-    position: sticky;
-    bottom: 27.95rem;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 50%;
 }
 
 .login {
@@ -110,4 +113,54 @@ a {
     font-size: 16px;
     width: 100%;
     padding: .75rem;
+}
+
+@media screen and (min-width: 420px ) and (max-width: 768px) {
+    .iphone {
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {/*tablet*/
+    .iphone {
+        height: 42.5%;
+        bottom: 52.5%;
+    }
+
+    .bigcontainer {
+        width: 50%;
+    }
+
+    .container1 {
+        height: 40vh;
+    }
+
+    .container2 {
+        height: 45vh;
+    }
+
+    body {
+        min-height: 100vh;
+        background-image: url("Assets/Background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bigcontainer {
+        display: flex;
+    }
+
+    .container1 {
+        width: 50%;
+        height: auto;
+    }
+
+    .iphone {
+        bottom: 27.5%;
+    }
 }
