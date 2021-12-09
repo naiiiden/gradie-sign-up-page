@@ -156,11 +156,30 @@ a {
     }
 
     .container1 {
+        width: 90%;
+        height: auto;
+    }
+    
+    .container2 {
+        height: 50vh;
+    }
+
+    .iphone {
+        bottom: 25%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .bigcontainer {
+        display: flex;
+    }
+
+    .container1 {
         width: 50%;
         height: auto;
     }
 
     .iphone {
-        bottom: 27.5%;
+        bottom: 25%;
     }
 }
