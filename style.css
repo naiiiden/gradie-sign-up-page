@@ -23,6 +23,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container2 {
@@ -59,10 +60,10 @@ h2 {
 }
 
 .iphone {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     position: absolute;
-    bottom: 50%;
+    bottom: 0;
 }
 
 .login {
@@ -117,14 +118,14 @@ a {
 
 @media screen and (min-width: 420px ) and (max-width: 768px) {
     .iphone {
-        height: 50%;
+        height: 100%;
     }
 }
 
 @media screen and (min-width: 768px) {/*tablet*/
     .iphone {
-        height: 42.5%;
-        bottom: 52.5%;
+        height: 100%;
+        bottom: 0%;
     }
 
     .bigcontainer {
@@ -132,11 +133,11 @@ a {
     }
 
     .container1 {
-        height: 40vh;
+        height: 22.5rem;
     }
 
     .container2 {
-        height: 45vh;
+        height: 25rem;
     }
 
     body {
@@ -161,11 +162,11 @@ a {
     }
     
     .container2 {
-        height: 50vh;
+        height: 28rem;
     }
 
     .iphone {
-        bottom: 25%;
+        bottom: 0;
     }
 }
 
@@ -180,6 +181,6 @@ a {
     }
 
     .iphone {
-        bottom: 25%;
+        bottom: 0%;
     }
 }
